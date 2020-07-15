@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>兴趣爱好</title>
+	<style>
+		*{
+		margin:0;
+		padding:0;
+
+	}
+	body{
+		background-color: #ffe8df;
+	}
+	ul{
+		list-style-type:none;
+	}
+
+	li{
+		float:left;
+		border-bottom: 2.5px solid #888888;
+		width:20%;	
+	}
+	li a{
+		display: inline-block;
+		color: #888888;
+		text-decoration: none;
+		padding:12px 100px;
+		font-size: 20px;
+	}
+	li a:hover{
+		color: whitesmoke;
+	}
+	div.cont{
+		width:80%;
+		background-color:rgba(240,240,240,0.7);
+		border-radius: 50px;
+		position:absolute;
+		left:150px;
+		top:250px;
+		z-index: -1;
+}
+		.zhuixing{
+			width:25%;
+		}
+		img.pic1{
+			float:right;
+			width:700px;
+			position:absolute;
+			left:300px;
+			top:80px;
+			border:8px solid #888888;
+		}
+		img.pic2{
+			float:right;
+			width:700px;
+			position:absolute;
+			left:300px;
+			top:650px;
+			border:8px solid #888888;
+		}
+		img.logo{
+			opacity: 0.7
+		}
+	</style>
+</head>
+
+<body>
+<a href="#top"><img src="返回顶部.png" alt="return" style="position:absolute;bottom:0;right:0;position: fixed"></a>
+	<!--返回顶部按钮-->
+<div id="top" style="overflow: hidden">
+	<ul>
+	<li ><a href="基本信息页.html" style="margin-top: 7px">基本信息</a></li>
+	<li ><a href="兴趣爱好页.html" style="margin-top: 7px">兴趣爱好</a></li>
+	<li style="border-bottom: none"><a href="index.html"><img src="My.png" style="height:60px;" alt="my"></a></li>
+	<li ><a href="社交频道页.html" style="margin-top: 7px">社交频道</a></li>
+	<li ><a href="我的推荐页.html" style="margin-top: 7px">我的推荐</a></li>
+</ul>
+</div><br><br><br>
+<div align="center" style="visibility: hidden">
+	<img src="个人照2.jpg" class="1 pic" alt="me" width="170"><img src="个人照1.jpg" class="2 pic" alt="me" width="170"><img src="个人照3.jpg" class="3 pic" alt="me" width="170"><img src="个人照5.jpg" class="4 pic" alt="me" width="170"><img src="个人照4.jpg" class="5 pic" alt="me" width="170">
+</div><!--隐藏个人照片但是会占位-->
+<div class="cont" style="border: 3px solid #888888"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<div>
+	<p class="zhuixing" style="color: #888888;margin-left: 70px;font-size:40px" width="200px">追星:</p>
+	<p>
+		<img class="pic1" src="1.jpg" alt="zhuixing" id="zx"><img class="logo" src="下一张.png" alt="next" onClick="nextone()" style="position:absolute;left:1070px;top:400px">
+	</p>
+		<!--我是分界线-->
+	</div><br><br><br><br><br><br><br><br><br>
+	<div>
+	<p class="zhuixing" style="color: #888888;margin-left: 70px;font-size:40px" width="200px">摄影:</p>
+	<p>
+		<img class="pic2" src="图1.jpg" alt="sheying" id="sy"><img class="logo" src="下一张.png" alt="nnext" onClick="nnextone()" style="position:absolute;left:1070px;top:700px">
+	</p>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+</body>
+<script>
+	var i=1;
+	var img=document.getElementById("zx");
+	function nextone(){
+	  if(i==1){
+	   img.src="1.jpg";
+	   i=2;
+	}else if(i==2){
+	   img.src="2.jpg";
+	   i=3;
+	}else if(i==3){
+	   img.src="3.jpg";
+	   i=4;
+	}else if(i==4){
+	   img.src="8.jpg";
+	   i=5;
+	}else{
+	   img.src="10.jpg";
+	   i=1;
+	}
+	}
+	var a=1;
+	var doc=document.getElementById("sy");
+	function nnextone(){
+	  if(a==1){
+	   doc.src="图1.jpg";
+	   a=2;
+	}else if(a==2){
+	   doc.src="图2.jpg";
+	   a=3;
+	}else if(a==3){
+	   doc.src="图3.jpg";
+	   a=4;
+	}else if(a==4){
+	   doc.src="图4.jpg";
+	   a=5;
+	}else{
+	   doc.src="图5.jpg";
+	   a=1;
+	}
+	}
+	</script>
+</html>

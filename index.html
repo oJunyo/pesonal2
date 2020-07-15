@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人网站设计</title>
+<style>
+	*{
+		margin:0;
+		padding:0;
+
+	}
+	body{
+		background-color: #ffe8df;
+	
+	}
+	ul{
+		list-style-type:none;
+	}
+
+	li{
+		float:left;
+		border-bottom: 2.5px solid #888888;
+		width:20%;	
+	}
+	li a{
+		display: inline-block;
+		color: #888888;
+		text-decoration: none;
+		padding:12px 100px;
+		font-size: 20px;
+	}
+	li a:hover{
+		color: whitesmoke;
+	}
+	div.cont{
+		width:80%;
+		background-color:rgba(240,240,240,0.7);
+		border-radius: 50px;
+		position:absolute;
+		left:150px;
+		top:250px;
+		z-index: -1;
+		border:3px solid #888888;
+}
+	div.gallery{
+		display: inline-block;
+		float:left;
+		width:350px;
+		margin-left:40px;
+		margin-top:20px;
+		border:3px solid #888888;
+	}
+	div.desc{
+		color:black;
+		
+		
+	}
+	div.gallery img{
+		width:100%;
+	}
+	.main:hover{
+		opacity: 0.5;
+	}/*悬停在图片上图片会半透明*/
+</style>
+</head>
+
+<body>
+<a href="#top"><img src="返回顶部.png" alt="return" style="position:absolute;bottom:0;right:0;position: fixed"></a> <!--返回顶部按钮-->
+<div id="top" style="overflow: hidden">
+	<ul><!--导航栏-->
+	<li ><a href="基本信息页.html" style="margin-top: 7px">基本信息</a></li>
+	<li ><a href="兴趣爱好页.html" style="margin-top: 7px">兴趣爱好</a></li>
+	<li style="border-bottom: none"><a href="index.html"><img src="My.png" style="height:60px;" alt="my"></a></li>
+	<li ><a href="社交频道页.html" style="margin-top: 7px">社交频道</a></li>
+	<li ><a href="我的推荐页.html" style="margin-top: 7px">我的推荐</a></li>
+	</ul>
+</div>
+<br>
+<br>
+<br>
+
+<div align="center" >
+	<img src="个人照2.jpg" class="1 pic" alt="me" width="170"><img src="个人照1.jpg" class="2 pic" alt="me" width="170"><img src="个人照3.jpg" class="3 pic" alt="me" width="170"><img src="个人照5.jpg" class="4 pic" alt="me" width="170"><img src="个人照4.jpg" class="5 pic" alt="me" width="170">
+</div>
+<div class="cont"><br><br><br><br><br><br><br><br><br><br><br>
+	<div style="text-align: center;letter-spacing: 5px;line-height: 170%">
+	愿你的创作伴你到人生尽头<br>
+	愿你无论身处何方都能宽宏大量<br>
+	试炼的终点是花开万里<br>
+	愿你以渺小启程<br>以伟大结束<br><br>
+	《so far away》<br><br><br><br><br><br><br>
+	<div style="color:#888888;font-size: 60px;text-align: center;font-weight: bold;border-bottom: 3px solid;padding-bottom: 16px;border-top:3px solid;padding-top:16px">MY WORLD</div><br><br>
+	<!--MY WORLD分界-->
+	<div class="gallery">
+		<img class="main" src="杭州.jpg" alt="hang" width="350px"><div class="desc" style="text-align: left;padding-left: 7px;margin-bottom: 7px;"><h2 style="margin-bottom: 15px;margin-top:5px">Sept 9,2018</h2>第一次来杭州，对杭州抱有很大的期待，但是一出机场，觉得和我们那边没什么两样，后来在杭州呆久了后，发现确实有两样。</div>
+		</div>
+	<div class="gallery">
+		<img class="main" src="上海1.jpg" alt="hang" width="350px"><div class="desc" style="text-align: left;padding-left: 7px;margin-bottom: 7px;"><h2 style="margin-bottom: 15px;margin-top:5px">Sept 30,2018</h2>第一次去上海，同样抱有很大的期待，但或许是上海过于繁华，从见到它的第一眼起，就觉得它与众不同。</div>
+	</div>
+	<div class="gallery">
+		<img class="main" src="香港.jpg" alt="hang" width="350px"><div class="desc" style="text-align: left;padding-left: 7px;margin-bottom: 7px;"><h2 style="margin-bottom: 15px;margin-top:5px">Sept 30,2018</h2>第一次去香港，是为了演唱会，匆匆忙忙度过了一天半，所以没来得及认真看一下香港这座城。紧邻的建筑群是我喜欢的风格，尽管有时会让人有压迫感。</div>
+	</div>
+	<div class="gallery" style="clear: both">
+		<img class="main" src="北京.jpg" alt="hang" width="350px"><div class="desc" style="text-align: left;padding-left: 7px;margin-bottom: 7px;"><h2 style="margin-bottom: 15px;margin-top:5px">Jun 12,2018</h2>第一次去北京，是因为高考后的自主招生。北京的拥挤让当时的我被迫待在旅馆，所以也没来得及去更多地方。</div>
+	</div>
+	<div class="main gallery">
+		<img class="main" src="广州.jpg" alt="hang" width="350px"><div class="desc" style="text-align: left;padding-left: 7px;margin-bottom: 7px;"><h2 style="margin-bottom: 15px;margin-top:5px">Aug 14,2014</h2>第n次去广州，因为家庭缘故，10岁之前去过很多次广州，但小记忆总是停留在一些事和一些人上，2014年是这些年来最后一次去，那次纯粹是为了玩，而不是因为其他原因。</div>
+	</div>
+	<div class="main gallery">
+		<img class="main" src="上海3.jpg" alt="hang" width="350px"><div class="desc" style="text-align: left;padding-left: 7px;margin-bottom: 7px;"><h2 style="margin-bottom: 15px;margin-top:5px">Oct 4,2019</h2>我也不知道的第几次去上海，总之因为追星去过很多次，但这次的目的不是追星，所以去了几个景点。我时常感叹，总有一次我要为了逛景点、吃吃喝喝去上海多待上几天，因为我很喜欢这座城市。</div>
+	</div>
+	</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>基本信息</title>
+	<style>
+		*{
+		margin:0;
+		padding:0;
+
+	}
+	body{
+		background-color: #ffe8df;
+	}
+	ul{
+		list-style-type:none;
+	}
+
+	li{
+		float:left;
+		border-bottom: 2.5px solid #888888;
+		width:20%;	
+	}
+	li a{
+		display: inline-block;
+		color: #888888;
+		text-decoration: none;
+		padding:12px 100px;
+		font-size: 20px;
+	}
+	li a:hover{
+		color: whitesmoke;
+	}
+	div.cont{
+		width:80%;
+		background-color:rgba(240,240,240,0.7);
+		border-radius: 50px;
+		position:absolute;
+		left:150px;
+		top:250px;
+		z-index: -1;
+}
+	div img.mark0{
+			width:6px;
+			margin-right: 15px
+		}
+	
+</style>
+</head>
+
+<body>
+<a href="#top"><img src="返回顶部.png" alt="return" style="position:absolute;bottom:0;right:0;position: fixed"></a><!--返回顶部按钮-->
+<div id="top" style="overflow: hidden">
+	<ul>
+	<li ><a href="基本信息页.html" style="margin-top: 7px">基本信息</a></li>
+	<li ><a href="兴趣爱好页.html" style="margin-top: 7px">兴趣爱好</a></li>
+	<li style="border-bottom: none"><a href="index.html"><img src="My.png" style="height:60px;" alt="my"></a></li>
+	<li ><a href="社交频道页.html" style="margin-top: 7px">社交频道</a></li>
+	<li ><a href="我的推荐页.html" style="margin-top: 7px">我的推荐</a></li>
+</ul>
+</div>
+<br>
+<br>
+<br>
+
+<div align="center" style="visibility: hidden">
+	<img src="个人照2.jpg" class="1 pic" alt="me" width="170"><img src="个人照1.jpg" class="2 pic" alt="me" width="170"><img src="个人照3.jpg" class="3 pic" alt="me" width="170"><img src="个人照5.jpg" class="4 pic" alt="me" width="170"><img src="个人照4.jpg" class="5 pic" alt="me" width="170">
+</div><!--主页的个人照隐藏但会占位-->
+<div class="cont" style="border: 3px solid #888888">
+<div>
+	<img src="基本信息照片1.png" alt="me" width="200px" style="position:absolute;top:-90px;left:505px"></div>
+<div style="text-align: center;line-height: 35px;font-size:18px ">
+	<br><br><br><br><br>
+	<img class="mark0" src="未展开.png" alt="符号">姓名：周佳仪<br>
+	<img class="mark0" src="未展开.png" alt="符号">性别：女<br>
+	<img class="mark0" src="未展开.png" alt="符号">年龄：20岁<br>
+	<img class="mark0" src="未展开.png" alt="符号">学号：18221717<br>
+	<img class="mark0" src="未展开.png" alt="符号">生日：2000/4/16<br>
+	<img class="mark0" src="未展开.png" alt="符号">国籍：中国<br>
+	<img class="mark0" src="未展开.png" alt="符号">籍贯：湖南<br>
+	<img class="mark0" src="未展开.png" alt="符号">电话：19975260613<br>
+	<img class="mark0" src="未展开.png" alt="符号">网站开通时间：2020年7月16日<br><br><br>
+	</div>
+	<div style="color:#888888;font-size: 60px;text-align: center;font-weight: bold;border-bottom: 3px solid;border-top:3px solid">MY LIFE PATH</div>
+	<!--我是分界线-->
+	<br><br><br><br><br><br><br><br><br>
+	<img class="path" src="人生轨迹.png" alt="path" style="width:84%;opacity: 0.7;margin-left: 120px;position: relative" usemap="#pathmap">
+	<img class="0hidden" src="地标logo.png" alt="logo" style="position: absolute;left: 167px;top:1090px;">
+	<img class="0hidden" src="地标logo.png" alt="logo" style="position: absolute;left: 342px;top:1050px;">
+	<img class="0hidden" src="地标logo.png" alt="logo" style="position: absolute;left: 507px;top:1020px;">
+	<img class="1hidden" src="地标logo.png" alt="logo" onMouseOver="over1()" onMouseOut="out1()" style="position: absolute;left: 646px;top:1005px;">
+	<img id="img1" src="弟弟.jpg" alt="logo" style="position: absolute;left: 454px;top:785px;width: 200px;display: none">
+	<img class="2hidden" src="地标logo.png" alt="logo" onMouseOver="over2()" onMouseOut="out2()" style="position: absolute;left: 798px;top:957px;">
+	<img id="img2" src="浏阳一中.jpg" alt="logo" style="position: absolute;left: 556px;top:800px;width: 250px;display: none">
+	<img class="3hidden" src="地标logo.png" alt="logo" onMouseOver="over3()" onMouseOut="out3()" style="position: absolute;left: 964px;top:836px;">
+	<img id="img3" src="杭电.jpg" alt="logo" style="position: absolute;left: 976px;top:862px;width: 200px;display: none">
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+</body>
+<script>
+	function over1(){
+		img=document.getElementById("img1");
+		img.style.display="block";
+	
+		}
+	function out1(){
+		img=document.getElementById("img1");
+		img.style.display="none";
+	}
+		function over2(){
+		img=document.getElementById("img2");
+		img.style.display="block";
+	
+		}
+	function out2(){
+		img=document.getElementById("img2");
+		img.style.display="none";
+	}
+	function over3(){
+		img=document.getElementById("img3");
+		img.style.display="block";
+	
+		}
+	function out3(){
+		img=document.getElementById("img3");
+		img.style.display="none";
+	}
+	</script>
+</html>

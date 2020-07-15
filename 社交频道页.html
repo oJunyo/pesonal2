@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>社交频道</title>
+	<style>
+		*{
+		margin:0;
+		padding:0;
+
+	}
+	body{
+		background-color: #ffe8df;
+		letter-spacing: 2px;
+		
+	}
+	ul{
+		list-style-type:none;
+	}
+
+	li{
+		float:left;
+		border-bottom: 2.5px solid #888888;
+		width:20%;	
+	}
+	li a{
+		display: inline-block;
+		color: #888888;
+		text-decoration: none;
+		padding:12px 100px;
+		font-size: 20px;
+	}
+	li a:hover{
+		color: whitesmoke;
+	}
+	div.cont{
+		width:80%;
+		background-color:rgba(240,240,240,0.7);
+		border-radius: 50px;
+		position:absolute;
+		left:150px;
+		top:250px;
+		z-index: -1;
+}
+		img.logo{
+			width:50px;
+			margin-left: 100px;
+			margin-top:14px;
+		}
+		.yijian{
+			margin:15px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+
+<body>
+<a href="#top"><img src="返回顶部.png" alt="return" style="position:absolute;bottom:0;right:0;position: fixed"></a>
+	<!--返回顶部按钮-->
+<div id="top" style="overflow: hidden">
+	<ul>
+	<li ><a href="基本信息页.html" style="margin-top: 7px">基本信息</a></li>
+	<li ><a href="兴趣爱好页.html" style="margin-top: 7px">兴趣爱好</a></li>
+	<li style="border-bottom: none"><a href="index.html"><img src="My.png" style="height:60px;" alt="my"></a></li>
+	<li ><a href="社交频道页.html" style="margin-top: 7px">社交频道</a></li>
+	<li ><a href="我的推荐页.html" style="margin-top: 7px">我的推荐</a></li>
+</ul>
+</div><br><br><br>
+<div align="center" style="visibility: hidden">
+	<img src="个人照2.jpg" class="1 pic" alt="me" width="170"><img src="个人照1.jpg" class="2 pic" alt="me" width="170"><img src="个人照3.jpg" class="3 pic" alt="me" width="170"><img src="个人照5.jpg" class="4 pic" alt="me" width="170"><img src="个人照4.jpg" class="5 pic" alt="me" width="170">
+</div>
+	<div class="cont" style="border: 3px solid #888888"><br><br><br><br>
+		<div style="font-size: 20px">
+		<div><a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_type=code&client_id=101477621&redirect_uri=https%3A%2F%2Fsso.e.qq.com%2Fpassport%3Fservice_tag%3D14%26sso_redirect_uri%3Dhttps%253A%252F%252Fadnet.qq.com%252F&scope=get_user_info"><img class="logo" src="qqlogo.png" alt="qq" onClick=""></a>【1148311607】qq常用来联系老同学或者处理学校qq群的问题。</div><!--点击logo可以跳转到新页面-->
+		<div><a href="https://wx.qq.com/" target="_blank"><img class="logo" src="微信logo.png" alt="wechat"></a>【zjy1148411607】微信多用来联系，找我有事请通过微信联系我吧！</div>
+		<div><a href="https://mail.qq.com/" target="_blank"><img class="logo" src="邮箱logo.png" alt="email"></a>【1148311607@qq.com】虽然logo是qq邮箱，但是里面各种邮箱都有，主要用来交作业。</div>
+		<div><a href="https://weibo.com/" target="_blank"><img class="logo" src="微博logo.png" alt="weibo"></a>【Kookii_】微博主要用来追星和娱乐，同时一些不想发在其他社交平台上的我都会往这上面发！</div>
+		<div><a href="http://www.youtube.com/" target="_blank"><img class="logo" src="youtubelogo.png" alt="油管"></a>【zjy1148311607@gmail.com】油管主要用来追星。</div>
+		<div><a href="http://www.twitter.com/" target="_blank"><img class="logo" src="推特logo.png" alt="推特"></a>【Juny0901_】用来追星+方便投票。社交联系有微信就够了</div>
+		<div><a href="http://instagram.com/" target="_blank"><img class="logo" src="inslogo.png" alt="ins"></a>【okookiio】会在上面发照片</div>
+	<br><br><br>
+		</div>
+		<div style="color:#888888;font-size: 60px;text-align: center;font-weight: bold;border-bottom: 3px solid;border-top:3px solid">YOUR SUGGESTION</div><br>
+		<!--我是分界线-->
+		<div class="yijian">
+		<img src="两竖线.png" alt="竖线" style="margin-left: 15px;margin-right: 5px">您的建议主要在哪方面：
+			<select size="1">
+			<option>排版</option>
+			<option>内容</option>
+			<option>风格</option>
+			</select>
+		</div>
+		<div class="yijian">
+		<img src="两竖线.png" alt="竖线" style="margin-left: 15px;margin-right: 5px">请写下您具体的建议内容：<br>
+		<div class="yijian" align="center">
+		<textarea rows="30" cols="130">请在此区域写下您的建议</textarea><br>
+		<input type="button" onClick="handin()" value="提交"></div><br><br><br></div>
+		<!--这个警告框一直弹不出来-->
+	</div>
+
+
+</body>
+<script>
+function handin(){
+	alert("您已提交！")；
+}
+	</script>
+
+</html>
